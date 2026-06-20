@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geo Redirect</title>
+
+    <script>
+        // Hide page until location is determined
+        document.documentElement.style.visibility = 'hidden';
+
+        function jsonFeed(data) {
+            if (data && data.country === "IN") {
+                window.location.replace("https://www.google.com");
+            } else {
+                window.location.replace("https://mail.google.com");
+            }
+        }
+    </script>
+
+    <script src="https://geolocation.onetrust.com/cookieconsentpub/v1/geo/location"></script>
+</head>
+<body>
+</body>
+</html>
